@@ -1,0 +1,70 @@
+
+body{
+    background: #00ccff;
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    max-width: 80px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header{
+    max-width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    border: solid 1px rebeccapurple;
+    
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    
+}
+
+.nav li{
+    margin-left: 50px;
+    text-align: center;
+}
+
+.nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.user__info-section {}
+.user__info-block {
+    margin: 20px 0 0 20px;
+    width: 410px;
+    height: 200px;
+    background-color: blanchedalmond;
+    position: relative;
+}
+.user__info {}
+.user__info-image {
+width: 100px;
+height: 160px;
+position: absolute;
+background-color: blueviolet;
+margin: 20px;
+}
+.user__info-title-block{
+    text-align: end;
+    display: flex;
+
+}
+
+.user__info-title {
+    padding: 0px 120px 0 0;
+    background-color: cornflowerblue;
+}
+.user__info-subtitle {}
+
+.test{
+    background-color: darkcyan;
+    
+}
