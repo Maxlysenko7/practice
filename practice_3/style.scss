@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #ff5e00, #ffdd00);
+}
+
+
+.calendar {
+    background: white;
+    -webkit-box-shadow: 4px 3px 28px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 3px 28px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 3px 28px 2px rgba(34, 60, 80, 0.2);
+     border: solid 3px #fff;
+  
+    &__mouth-week,
+    &__weeks {
+      background: rgb(255, 164, 104);
+    }
+  
+    &__mouth-week {
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+      font-size: 24px;
+      
+    }
+  
+    &__weeks {
+      color: rgb(255, 38, 38);
+      padding: 0 15px 0 15px;
+      display: flex;
+      justify-content: space-between;
+  
+      span {
+        font-size: 12px;
+        padding: 5px;
+      }
+    }
+  
+    &__days {
+      display: flex;
+  
+      label {
+        padding: 17px;
+        height: 55px;
+        width: 55px;
+        text-align: center;
+        margin: 0 auto;
+      }
+      input {
+        visibility: hidden;
+      }
+  
+      &-work {
+        cursor: pointer;
+  
+        &:hover {
+          color: white;
+          background: rgb(96, 77, 215);
+        }
+        &:focus {
+          color: white;
+          background: rgb(40, 41, 157);
+        }
+      }
+  
+      &-holiday {
+        background: rgb(195, 88, 120);
+        cursor: pointer;
+  
+        &:hover,
+        &:focus,
+        &:focus-visible {
+          color: white;
+          background: red;
+        }
+      }
+  
+      &-weekend {
+        cursor: pointer;
+  
+        &:hover {
+          color: white;
+          background: blue;
+        }
+        &:focus {
+          color: white;
+          background: darkblue;
+        }
+      }
+  
+      &-last,
+      &-next {
+        background: rgb(236, 237, 237);
+        color: rgb(150, 151, 151);
+        cursor: none;
+      }
+    }
+  }
